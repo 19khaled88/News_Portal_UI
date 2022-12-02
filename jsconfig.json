@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": "",
+        "paths": {
+            "@/components/*":["components/*"],
+            "@/styles/*":["styles/*"],
+            "@/config/*":["config/*"]
+            
+        }
+    }
+}
