@@ -90,5 +90,387 @@
       "detail": "Tournament organisers Singapore Badminton Association (SBA) and Badminton World Federation (BWF) on Wednesday agreed to cancel the Singapore Open 2021 scheduled for June 1-6, 2021. All attempts were made by the organisers and BWF to provide a safe tournament environment for all participants. However, rising COVID-19 cases globally led to complex challenges in managing inbound travel. Thus, in the interests of all players, tournament personnel and the local community's health and safety, the event has been cancelled, the Badminton World Federation said in an official statement.",
       "image": "/images/sample/news10.jpg"
     }
+  ],
+
+  "homeTopTtems":[
+    {
+      "id":1,
+      "image":"/images/home/star-magazine-1.jpg",
+      "info":"The morning after: What people"
+    },
+    {
+      "id":2,
+      "image":"/images/home/star-magazine-2.jpg",
+      "info":"The morning after: What people"
+    },
+    {
+      "id":3,
+      "image":"/images/home/star-magazine-3.jpg",
+      "info":"The morning after: What people"
+    },
+    {
+      "id":4,
+      "image":"/images/home/star-magazine-4.jpg",
+      "info":"The morning after: What people"
+    }
   ]
+  ,
+  "slider":[
+    {
+      "id":1,
+      "image":"/images/home/banner.jpg",
+      "title":"If you wanted to get rich, how would you do it",
+      "info":"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment",
+      "time":"2 hours age",
+      "comment":"126"
+    },
+    {
+      "id":2,
+      "image":"/images/home/banner_1.jpg",
+      "title":"If you wanted to get rich, how would you do it",
+      "info":"Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus",
+      "time":"2 hours age",
+      "comment":"126"
+    },
+    {
+      "id":3,
+      "image":"/images/home/banner_2.jpg",
+      "title":"If you wanted to get rich, how would you do it",
+      "info":"it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful",
+      "time":"2 hours age",
+      "comment":"126"
+    },
+    {
+      "id":4,
+      "image":"/images/home/banner_3.jpg",
+      "title":"If you wanted to get rich, how would you do it",
+      "info":"I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth",
+      "time":"2 hours age",
+      "comment":"126"
+    }
+  ],
+  "sideInfo":[
+    {
+      "id":1,
+      "image":"/images/home/Profile_1.jpg",
+      "name":"Henry Itondo",
+      "info":"The Most And Least Visited Countries In The World"
+    },
+    {
+      "id":2,
+      "image":"/images/home/Profile_2.jpg",
+      "name":"Yamaha Toshinobu",
+      "info":"The Best Places to Travel in month August"
+    },
+    {
+      "id":3,
+      "image":"/images/home/Profile_2.jpg",
+      "name":"Jurrien Oldhof",
+      "info":"Focus On Fun And Challenging Lifetime Activities"
+    },
+    {
+      "id":4,
+      "image":"/images/home/Profile_4.jpg",
+      "name":"Rita Leite",
+      "info":"Bread Is The Most Widely Consumed Food In The World"
+    },
+    {
+      "id":5,
+      "image":"/images/home/Profile_5.jpg",
+      "name":"Joana Leite",
+      "info":"What Is Music, And What Does It Mean To Us"
+    },
+    {
+      "id":6,
+      "image":"/images/home/Profile_6.jpg",
+      "name":"Oka Tomoaki",
+      "info":"Is Breakfast The Most Important Meal Of The Day"
+    }
+  ],
+  "WorldNews":[
+    {
+      "id":1,
+      "name":"Travel",
+      "image":"/images/home/travel.jpg",
+      "title":"Refugees flood Turkey's border with Greece",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    },
+    {
+      "id":2,
+      "name":"News",
+      "image":"/images/home/news.jpg",
+      "title":"South Korea’s Moon Jae-in sworn in vowing address",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    },
+    {
+      "id":3,
+      "name":"Art",
+      "image":"/images/home/art.jpg",
+      "title":"These puppies are training to assist in avalanche rescue",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    },
+    {
+      "id":4,
+      "name":"Business",
+      "image":"/images/home/business.jpg",
+      "title":"Love Is Blind' couple opens up about their first year",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    },
+    {
+      "id":5,
+      "name":"Magazine",
+      "image":"/images/home/magazine.jpg",
+      "title":"A look at California's eerie plane graveyardse",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    },
+    {
+      "id":6,
+      "name":"Politics",
+      "image":"/images/home/politics.jpg",
+      "title":"The world's most beautiful racecourses",
+      "info":"Lorem Ipsum has been the industry's standard dummy text"
+    }
+  ],
+  "popularNews":[
+    {
+      "main":[
+        {
+          "id":1,
+          "image":"/images/home/glob.jpg",
+          "title":"Melania Trump speaks about courage at State Department",
+          "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+        }
+      ],
+      "side":[
+        {
+          "id":1,
+          "image":"/images/home/popular-star-magazine-5.jpg",
+          "title":"A look at California's eerie plane graveyards",
+          "info":"Lorem Ipsum has been the industry's standard dummy text"
+        },
+        {
+          "id":2,
+          "image":"/images/home/popular-star-magazine-6.jpg",
+          "title":"A look at California's eerie plane graveyards",
+          "info":"Lorem Ipsum has been the industry's standard dummy text"
+        },
+        {
+          "id":3,
+          "image":"/images/home/popular-star-magazine-7.jpg",
+          "title":"A look at California's eerie plane graveyards",
+          "info":"Lorem Ipsum has been the industry's standard dummy text"
+        },
+        {
+          "id":4,
+          "image":"/images/home/popular-star-magazine-8.jpg",
+          "title":"A look at California's eerie plane graveyards",
+          "info":"Lorem Ipsum has been the industry's standard dummy text"
+        }
+      ]
+    }
+  ],
+  "editorChoice":[
+    {
+      "main":[
+        {
+          "id":1,
+          "image":"/images/home/editor-star-magazine-9.jpg",
+          "title":"The island country that gave Mayor Pete his name"
+        },
+        {
+          "id":2,
+          "image":"/images/home/editor-star-magazine-10.jpg",
+          "title":"Disney parks expand (good) vegan food options"
+        },
+        {
+          "id":3,
+          "image":"/images/home/editor-star-magazine-11.jpg",
+          "title":"A hot springs where clothing is optional after dark"
+        },
+        {
+          "id":4,
+          "image":"/images/home/editor-star-magazine-12.jpg",
+          "title":"Japanese chef carves food into incredible pieces of art"
+        },
+        {
+          "id":5,
+          "image":"/images/home/editor-star-magazine-13.jpg",
+          "title":"The Misanthrope Society: A Taipei bar for people who"
+        },
+        {
+          "id":6,
+          "image":"/images/home/editor-star-magazine-14.jpg",
+          "title":"From Pakistan to the Caribbean: Curry's journey"
+        }
+      ]
+    },
+    {
+      "side":[
+        {
+          "id":1,
+          "image":"/images/home/live-star-magazine-15.jpg"
+        }
+      ]
+    },
+    {
+      "latest":[
+        {
+          "id":1,
+          "title":"South Korea’s Moon Jae-in sworn in vowing address",
+          "time":"2 hours age",
+          "comment":"126"
+        },
+        {
+          "id":2,
+          "title":"South Korea’s Moon Jae-in sworn in vowing address",
+          "time":"2 hours age",
+          "comment":"126"
+        },
+        {
+          "id":3,
+          "title":"South Korea’s Moon Jae-in sworn in vowing address",
+          "time":"2 hours age",
+          "comment":"126"
+        },
+        {
+          "id":4,
+          "title":"South Korea’s Moon Jae-in sworn in vowing address",
+          "time":"2 hours age",
+          "comment":"126"
+        }
+      ]
+    }
+  ],
+  "footer":[
+    {
+      "News":[
+        "Home","World","Magazine","Business","Politics"
+      ],
+      "World":[
+        "Sports","Art","Magazine","Real estate","Travel","Author"
+      ],
+      "Features":[
+        "Photograpy","Video","Newsletters","Live Events","Stores","Jobs"
+      ],
+      "More":[
+        "RSS","FAQ","User Agreement","Privacy","About us","Contact"
+      ],
+      "SocialIcon":[
+        "/images/icon/facebook.png",
+        "/images/icon/instagram.png",
+        "/images/icon/linkedin.png",
+        "/images/icon/twitter.png",
+        "/images/icon/youtube.png"
+        
+      ]
+    }
+  ],
+  "deepFooter":[
+    "Terms of Use",
+    "Privacy Policy",
+    "Accessibility & CC.",
+    "AdChoices",
+    "Advertise with us Transcripts",
+    "License",
+    "Sitemap",
+    "Free Bootstrap website templates from Bootstrapdash"
+  ],
+ 
+  "worldNewsLeft":{
+        "id":1,
+        "title":"Melania Trump speaks about courage at State Department",
+        "image":"/images/world/Politics_1.jpg",
+        "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+      },
+      
+      
+  "worldNewsRight": 
+    [
+      {
+        "id":2,
+        "title":"A look at California's eerie plane graveyards",
+        "image":"/images/world/Politics_2.jpg",
+        "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+      },
+      {
+        "id":3,
+        "title":"The world's most beautiful racecourses",
+        "image":"/images/world/Politics_3.jpg",
+        "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+      },
+      {
+        "id":4,
+        "title":"Japan cancels cherry blossom festivals over virus fears",
+        "image":"/images/world/Politics_4.jpg",
+        "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+      },
+      {
+        "id":5,
+        "title":"Classic cars reborn as electric vehicles",
+        "image":"/images/world/Politics_5.jpg",
+        "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+      }
+    ],
+  "worldPopularNews":[
+    {
+      "id":1,
+      "title":"The island country that gave Mayor Pete his name",
+      "image":"/images/world/Politics_6.jpg"
+    },
+    {
+      "id":2,
+      "title":"Disney parks expand (good) vegan food options",
+      "image":"/images/world/Politics_7.jpg"
+    },
+    {
+      "id":3,
+      "title":"A hot springs where clothing is optional after dark",
+      "image":"/images/world/Politics_8.jpg"
+    },
+    {
+      "id":4,
+      "title":"A hot springs where clothing is optional after dark",
+      "image":"/images/world/Politics_9.jpg"
+    },
+    {
+      "id":5,
+      "title":"Japanese chef carves food into incredible pieces of art",
+      "image":"/images/world/Politics_10.jpg"
+    },
+    {
+      "id":6,
+      "title":"Disney parks expand (good) vegan food options",
+      "image":"/images/world/Politics_11.jpg"
+    },
+    {
+      "id":7,
+      "title":"The Misanthrope Society: A Taipei bar for people who",
+      "image":"/images/world/Politics_12.jpg"
+    },
+    {
+      "id":8,
+      "title":"From Pakistan to the Caribbean: Curry's journey",
+      "image":"/images/world/Politics_13.jpg"
+    },
+    {
+      "id":9,
+      "title":"The island country that gave Mayor Pete his name",
+      "image":"/images/world/Politics_14.jpg"
+    },
+    {
+      "id":10,
+      "title":"Disney parks expand (good) vegan food options",
+      "image":"/images/world/Politics_15.jpg"
+    },
+    {
+      "id":11,
+      "title":"The island country that gave Mayor Pete his name",
+      "image":"/images/world/Politics_16.jpg"
+    },
+    {
+      "id":12,
+      "title":"From Pakistan to the Caribbean: Curry's journey",
+      "image":"/images/world/Politics_17.jpg"
+    }
+      ]
 }

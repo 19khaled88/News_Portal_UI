@@ -1,0 +1,48 @@
+.top{
+    position: sticky;
+    top:0px;
+    z-index: 1;
+    inset:0 0 auto;
+}
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    align-items: center;
+    border-top: 1px solid rgb(248, 250, 245);
+    border-bottom: 1px solid rgb(250, 252, 248);
+    background-color: #00ADB5;
+}
+
+.NavItem ul{
+    display: flex;
+    flex-direction: row;
+    gap:30px
+}
+.NavItem ul a{
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    color: #e8f8f8;
+}
+.scrolTracker{
+    height: 0.5rem;
+    background-color: blue;
+    
+
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%; */
+}
+
+.Search img{
+    width: 25px;
+    height: 25px;
+}

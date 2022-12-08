@@ -3,13 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function NewsItems({ items }) {
-  
+ 
   return (
         <div>
           <div className={styles.news}>
             <div className={styles.img}>
               <Image
-                src={items.attributes.image.data.attributes.url ? items.attributes.image.data.attributes.url : 'No image'}
+                src={items.attributes.image?.data?.attributes.url }
+                // src={items.attributes.image?.data?.attributes.url ? items.attributes.image.data.attributes.url : 'No image'}
                 width={150}
                 height={150}
                 alt="No Image"

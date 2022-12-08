@@ -9,6 +9,9 @@ export default function Header() {
       <nav>
         <ul>
           <li>
+            <Link href="/add">Add</Link>
+          </li>
+          <li>
             <Link href="/news">News</Link>
           </li>
           <li>

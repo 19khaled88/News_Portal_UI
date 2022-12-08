@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "aos": "^2.3.4",
+    "framer-motion": "^6.5.1",
     "next": "13.0.5",
+    "node-fetch": "^3.3.0",
     "react": "18.2.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
-    "react-toastify": "^9.1.1"
+    "react-intersection-observer": "^9.4.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.1",
+    "slick-carousel": "^1.8.1"
   }
 }

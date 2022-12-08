@@ -1,6 +1,9 @@
 .news {
     position: relative;
     padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .news h3 {
@@ -25,3 +28,107 @@
     margin-left: 20px;
     color: red;
 }
+.modification{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+/* Button */
+.btn52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  border-radius: 12px;
+  outline: 0;
+  height: 40px;
+  border: 1px solid black;
+  color: aliceblue;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn52:after {
+    color: aliceblue;
+  content: "";
+  background-color: #32b96b;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  border-radius: 12px;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btn52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
+
+/* CSS */
+.btn62 {
+  background: linear-gradient(to bottom right, #f11840, #f47a2e);
+  border: 0;
+  width: 150px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.btn62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btn62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+@media (min-width: 768px) {
+  .btn52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

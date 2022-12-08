@@ -7,7 +7,8 @@ export default function Home({ newsResponse }) {
   const { data } = newsResponse
 
   const newsFeed=(news)=>{
-    if(news.length > 5){
+    
+    if(news?.length > 5){
       return <div>
         {
           news.slice(0,5).map((item) => (
@@ -18,7 +19,7 @@ export default function Home({ newsResponse }) {
       </div>
         
     }else{
-      return news.map((item) => (
+      return news?.map((item) => (
         <NewsItems key={item.id} items={item} number={news.length} />
       ))
     }
@@ -62,11 +63,13 @@ export default function Home({ newsResponse }) {
 
 export async function getStaticProps(){
   const newsResponse = await fetcher(
-    `${process.env.NEXTJS_PUBLIC_URL}/sports?populate=*`
+    `${process.env.NEXTJS_PUBLIC_URL}/news?populate=*`
   )
+ 
   return {
     props : {
      newsResponse
-    }
+    },
+    revalidate: 1,
   }
 }

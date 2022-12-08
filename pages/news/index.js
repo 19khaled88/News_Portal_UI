@@ -32,7 +32,7 @@ export default function news({newsResponse}) {
 // }
 export async function getServerSideProps() {
   const newsResponse = await fetcher(
-    `${process.env.NEXTJS_PUBLIC_URL}/sports?populate=*`
+    `${process.env.NEXTJS_PUBLIC_URL}/news?populate=*`
   )
   return {
     props : {
