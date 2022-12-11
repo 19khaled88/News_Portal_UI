@@ -375,15 +375,12 @@
     "Sitemap",
     "Free Bootstrap website templates from Bootstrapdash"
   ],
- 
   "worldNewsLeft":{
         "id":1,
         "title":"Melania Trump speaks about courage at State Department",
         "image":"/images/world/Politics_1.jpg",
         "info":"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
       },
-      
-      
   "worldNewsRight": 
     [
       {
@@ -472,5 +469,155 @@
       "title":"From Pakistan to the Caribbean: Curry's journey",
       "image":"/images/world/Politics_17.jpg"
     }
-      ]
+      ],
+ 
+  "blogText1":["He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the campaign has become less about backing Macron and instead about voting against Le Pen, the National Front candidate."],
+  "blogImage1":["/images/blog/news-1.jpg"],
+  "blogText2":["He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the campaign has become less about backing Macron and instead about voting against Le Pen, the National Front candidate."],
+  "blogImage2":["/images/blog/news-2.jpg"],
+  "blogText3":{"title": "TravelTips: How Do I Live On The Cheap?",
+              "info":"He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the campaign has become less about backing Macron and instead about voting against Le Pen, the National Front candidate." 
+            },
+  "blogText4":["He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the campaign has become less about backing Macron and instead about voting against Le Pen, the National Front candidate."],
+  "blogTitle":["How long will your trip be?"],
+  "blogImages":[
+    "/images/blog/news-4.jpg",
+    "/images/blog/news-5.jpg"
+  ],
+  "blogText5":["Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor mentum. Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat, Vestibulum faucibus neque at lacus tristique eu ultrices ipsum mollis. Phasellus venenatis, lacus in malesuada pellentesque, platea dictumst.      Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat, Vestibulum faucibus neque at lacus tristique eu ultrices ipsum mollis. Phasellus venenatis, platea dictumst."],
+  "icon":[
+    "news",
+    "news",
+    "news",
+    "news",
+    "news"
+  ],
+  "blogImageType":[
+    {"image":"/images/blog/Profile_4.jpg"},
+    "of the Author",
+    "Nout Golstein",
+    "Odit ut quidem impedit sequi autem ut. Consequatur vel nesciunt ut perspiciatis omnis praesentium eos. Consequatur maiores laboriosam consequatur ea minus corrupti "
+  ],
+  "blogtext6":["You may also like"],
+
+  "blogTextImge2":{"image":"/images/blog/news-6.jpg"},
+  "blogText7":[
+                "A hot springs where clothing is optional after dark",
+                "Oka Tomoaki | 23 February, 2018"
+              ],
+  "blogTextImge3":  {"image":"/images/blog/news-7.jpg"},
+   
+  "blogText8":[
+            "A hot springs where clothing is optional after dark",
+            "Oka Tomoaki | 23 February, 2018"
+            ],
+
+  "covid":[
+      {"image":"/images/medical/COVID testing policy drupal.jpg"},
+      "Majority of indonedians unsure about COVID-19 vaccination, survey finds",
+      "11.30 am - 2 min read"
+  ],
+  "rightSide":[
+    {
+      "image":"/images/medical/africabansalcohal.jpeg",
+      "text":"DS. africa bans alcohol sales, tightens curfew in new COVID-19 registrations"
+    },
+    {
+    "image": "/images/medical/donald-trump-testify-01-rd-llr-220608_1654716567040_hpMain_1x1_992.jpg",
+    "text":"Is Trump having a nervous breakdown?"
+    }
+  ],
+  "latestnews":[
+    {"image": "/images/medical/indosiabansentry.jpg"},
+    {"title":"Indonesia to deny all foreigners entry amid feares over new Covid-19 strain"},
+    {"info":"Indonesia is closing its borders to foriegn travelers from all around teh world for the first two weeks of 021 Foreign minister Retna marsudia announced on Monday, amid concerns over the descovery of a more infetionsSARS-Voc-2 variant first detected in the united kingdom"}
+  ],
+  "latestNewsRight":[
+    {
+      "image":"/images/medical/biden.jpg",
+      "text":"Biden: Trump aides selling roadblok's for his transition team"
+    },
+   {
+    "image":"/images/medical/jakartacrisisofgrave.jpg",
+    "text":"Biden: Grave crisis in jakarta as Covid-19 cemetrics run out of space"
+   }
+  ],
+  "mostViewed":[
+    {
+      "title":"coronavirus",
+      "info":"spike proeins used in covid-19 vaccine: are they safe?",
+      "time":"Dec 28, 3 min , read"
+    },
+    {
+      "title":"sport",
+      "info": "yearender 020: indionesia ends dynamic, Security council term",
+      "time":"Dec 28, 3 min , read"
+    },
+    {
+      "title":"national",
+      "info": "Indosia's latest official covid-19 figures",
+      "time":"Dec 28, 3 min , read"
+    },
+    {
+      "title": "health",
+      "info": "How to reduce belly fat in 7 days? with diet tips and exercis",
+      "time":"Dec 28, 3 min , read"
+    },
+    {
+      "title": "health",
+      "info":  "Jokowi extends, broadens authority of peat restoration agency",
+      "time":"Dec 28, 3 min , read"
+    }
+  ],
+
+  "allNews":
+  { 
+    "popular":[
+      "The World’s Youngest Billionaire is Just 24 and She’s From Hong Kong",
+      "There is a large random factor in the success of any company.",
+      "Instead IBM ended up using all its power in the market to give Microsoft control of the PC standard.",
+      "If you wanted to get rich, how would you do it?",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "They never had to bet the company on a bold decision.",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "If IBM hadn't made this mistake, Microsoft would still have been a successful company, but it could not have grown so big so fast.",
+      "They never had to bet the company on a bold decision.",
+      "The World’s Youngest Billionaire is Just 24 and She’s From Hong Kong",
+      "There is a large random factor in the success of any company.",
+      "Instead IBM ended up using all its power in the market to give Microsoft control of the PC standard."
+    ],
+    "latest":[
+      "Instead IBM ended up using all its power in the market to give Microsoft control of the PC standard.",
+      "The World’s Youngest Billionaire is Just 24 and She’s From Hong Kong",
+      "There is a large random factor in the success of any company.",
+      "Instead IBM ended up using all its power in the market to give Microsoft control of the PC standard.",
+      "If you wanted to get rich, how would you do it?",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "They never had to bet the company on a bold decision.",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "All they had to do was play hardball with licensees and copy more innovative products reasonably promptly.",
+      "If IBM hadn't made this mistake, Microsoft would still have been a successful company, but it could not have grown so big so fast.",
+      "They never had to bet the company on a bold decision.",
+      "The World’s Youngest Billionaire is Just 24 and She’s From Hong Kong",
+      "There is a large random factor in the success of any company."
+    ]
+  },
+  "Details":[
+    {
+      "title":"If you wanted to get rich, how would you do it?",
+      "subTitle":"I think your best bet would be to start or join a startup. That's been a reliable way to get rich for hundreds of years.The word 'startup' dates from the 1960s, but what happens in one is very similar.",
+      "publisher":"By Anna Chapman Published on May 07, 2004.",
+      "info":"If you wanted to get rich, how would you do it? I think your best bet would be to start or join a startup. That's been a reliable way to get rich for hundreds of years. The word 'startup' dates from the 1960s, but what happens in one is very similar to the venture-backed trading voyages of the Middle Ages. Startups usually involve technology, so much so that the phrase 'high-tech startup' is almost redundant. A startup is a small company that takes on a hard technical problem.",
+      "image":"/images/politics/image-content.jpg",
+      "disclaimer":"Lots of people get rich knowing nothing more than that. You don't have to know physics to be a good pitcher. But I think it could give you an edge to understand the underlying principles. Why do startups have to be small? Will a startup inevitably stop being a startup as it grows larger? And why do they so often work on developing new technology? Why are there so many startups selling new drugs or computer software, and none selling corn oil or laundry detergent?",
+      "lasttitle":"The Proposition",
+      "lastinfo":"Economically, you can think of a startup as a way to compress your whole working life into a few years. Instead of working at a low intensity for forty years, you work as hard as you possibly can for four. This pays especially well in technology, where you earn a premium for working fast.",
+      "article":"In this article:",
+      "button":["Startup","Technology","Millions of dollars","Paul Graham"],
+      "comment":"35"
+    }
+  ]
+
+  
 }

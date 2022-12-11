@@ -1,0 +1,20 @@
+.popular p:hover{
+    color: black;
+    font-weight: 400;
+    border-left: 5px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+    padding-left: 10px;
+}
+.popular p{
+    color: gray;
+}
+.latest p{
+    color: gray;
+}
+.latest p:hover{
+    color: black;
+    font-weight: 400;
+    border-left: 5px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+    padding-left: 10px;
+}

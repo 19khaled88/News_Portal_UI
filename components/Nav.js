@@ -7,8 +7,8 @@ import { useEffect } from 'react'
 const Nav = () => {
   const path = usePathname()
   const links = [
-    { href: '/home', text: 'home' },
-    { href: '/Realestate', text: 'Real estate' },
+    { href: '/home', text: 'Home' },
+    { href: '/Medical', text: 'Medical' },
     { href: '/sports', text: 'Sports' },
     { href: '/business', text: 'Business' },
     { href: '/magazine', text: 'Magazine' },
@@ -30,7 +30,7 @@ const Nav = () => {
         <div className={styles.NavItem}>
           <ul>
             {links.map((element, index) => (
-              <motion.div whileHover={{ scale: 1.1 }}>
+              <motion.div whileHover={{ scale: 1.1 }} key={index}>
                 <Link
                   style={path === element.href ? { color: 'red' } : {}}
                   href={element.href}

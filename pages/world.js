@@ -1,4 +1,6 @@
 import Layout from '@/components/Layout'
+import styles from '@/styles/World.module.css'
+import Tilt from 'react-parallax-tilt'
 import { fetcher } from 'lib/api'
 
 export default function world({ newsResponse }) {
@@ -13,31 +15,57 @@ export default function world({ newsResponse }) {
               {data[element].title}
             </h1>
             <p>{data[element].info}</p>
+            <p>World News</p>
           </div>,
         )
       }
       if (element === type && type === 'worldNewsRight') {
         array.push(
           data[element].map((item) => (
-            <div key={item.id}>
-              <img src={item.image} alt="No image" width="100%" />
+            <div key={item.id} style={{ height: ''}}>
+              <Tilt>
+              <div style={{position:'relative',height:'70%'}}>
+                <img src={item.image} alt="No image" width="100%" height="100%"/>
+                <div style={{position:'absolute',margin:'0px',bottom:0,left:0, backgroundColor:'#D23369'}}>
+                  <p style={{color:'white',margin:'10px'}}>World News</p>
+                </div>
+              </div>
+              </Tilt>
               <h1
-                style={{ margin: '0px', fontSize: '20px', fontWeight: '500' }}
+                style={{ margin: '0px', fontSize: '15px', fontWeight: '500' }}
               >
                 {item.title}
               </h1>
-              <p style={{ margin: '0px', fontSize: '15px' }}>{item.info}</p>
+              <p style={{ margin: '0px', fontSize: '15px' }}>{item.info.length > 50 ? (<> {item.info.substring(1,50)} ...<button>Read more</button> </>) :item.info}</p>
+              
             </div>
           )),
         )
       }
       if (element === type && type === 'worldPopularNews') {
         array.push(
-          data[element].map((item) => (
-            <div key={item.id} style={{ height: '290px' }}>
-              <img src={item.image} alt="No Image" width="100%" height="70%" />
+          data[element].map((item,index) => (
+            <div key={item.id} style={{ height: '290px' }} >
+              <div style={{position:'relative',height:'80%'}} className={styles.box}>
+                <div style={{height:'100%'}} className={styles.boxImg}>
+                  <img src={item.image} alt="No Image" width="100%" height="100%" />
+                  <span className={styles.badge}>{index  + 1}</span>
+                </div>
+                
+                <div className={styles.boxContent}>
+                      <h3 className={styles.title}>Lorem ipsum dolor</h3>
+                      <ul className={styles.socialLinks}>
+                          <li><a href="#" class="fab fa-facebook"></a></li>
+                          <li><a href="#" class="fab fa-twitter"></a></li>
+                          <li><a href="#" class="fab fa-linkedin"></a></li>
+                      </ul>
+                </div>
+                <div style={{position:'absolute',margin:'0px',bottom:0,left:0, backgroundColor:'#D23369'}}>
+                  <p style={{color:'white',margin:'10px'}}>World News</p>
+                </div>
+              </div>
               <h1
-                style={{ margin: '0px', fontSize: '20px', fontWeight: '500' }}
+                style={{ margin: '0px', fontSize: '20px', fontWeight: '500',fontSize:'18px',fontWeight:'500',paddingTop:'5px' }}
               >
                 {item.title}
               </h1>
@@ -54,14 +82,14 @@ export default function world({ newsResponse }) {
       <Layout>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ textAlign: 'center' }}>
-            <h2>World</h2>
-            <p>
+            <h2 style={{marginTop:'0px',marginBottom:'2px'}}>World</h2>
+            <p style={{margin:'0px'}}>
               This text can be added in the category Description field in
               dashboard
             </p>
           </div>
           <h1
-            style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' }}
+            style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' ,paddingTop:'15px'}}
           >
             World News
           </h1>
@@ -74,14 +102,15 @@ export default function world({ newsResponse }) {
                 display: 'grid',
                 gridTemplateColumns: 'auto auto',
                 flex: 1,
-                gridColumnGap: 10,
+                gridColumnGap: 15,
+                gridRowGap:15
               }}
             >
               {worldNews(newsResponse, 'worldNewsRight')}
             </div>
           </div>
           <h1
-            style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' }}
+            style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' ,paddingTop:'15px'}}
           >
             Popular News
           </h1>

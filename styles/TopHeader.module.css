@@ -19,10 +19,11 @@
     gap:20px
 }
 
+
 .icon span{
     display: flex;
     flex-direction: row;
-    gap:10px
+    gap:8px
 }
 
 .icon span img{

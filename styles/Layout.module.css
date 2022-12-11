@@ -4,3 +4,132 @@
   max-width: 90%;
   padding: 0 30px;
 }
+
+.scrolling{
+  width: 81%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+/* scroll_left css coding*/
+.scroll_left{
+  height: 50px; 
+  overflow: hidden;
+  position: relative;
+  width: 74%;
+}
+.scroll_left p {
+  position: absolute;
+  width: 290%;
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%); 
+  transform:translateX(100%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-left 1s linear infinite;
+  -webkit-animation: scroll-left 1s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  }
+
+  /* scroller css coding*/
+.scroller {
+  height: 1.5em;
+  line-height: 1.5em;
+  position: relative;
+  overflow: hidden;
+  width: 26%;
+}
+.scroller span {
+  position: absolute;
+  margin-left: 10px;
+  top: 0;
+  font-size: 21px;
+  animation: slide 10s infinite;
+  font-weight: bold;
+  
+}
+
+  @keyframes slide {
+    /* 0% {
+      top: 0;
+    }
+    25% {
+      top: -1.2em;
+    }
+    50% {
+      top: -2.4em;
+    }
+    75% {
+      top: -3.6em;
+    }
+    100%{
+      top: -4.8em;
+    } */
+    
+    0% {
+      top:0
+    }
+    10%{
+      top: -1.2em
+    }
+    20%{
+      top:-2.4em
+    }
+    30%{
+      top:-3.6em
+    }
+    40%{
+      top:-4.8em 
+    }
+    50%{
+      top:-5.10em 
+    }
+    60%{
+      top:-6.12em
+    }
+    70%{
+      top:-7.14em 
+    }
+    80%{
+      top:-8.16em 
+    }
+    90%{
+      top:-9.18em 
+    }
+    100%{
+      top:-10.20em
+    }
+  }
+
+
+
+  /* Move it (define the animation) */
+  @-moz-keyframes scroll-left {
+  0% { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll-left {
+  0% { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll-left {
+  0% { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+  }
+  }

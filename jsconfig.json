@@ -5,6 +5,7 @@
         "paths": {
             "@/components/*":["components/*"],
             "@/styles/*":["styles/*"],
+            "@/node_modules/react-ts-typewriter/dist/*":["node_modules/react-ts-typewriter/dist/*"],
             "@/config/*":["config/*"]
             
         }

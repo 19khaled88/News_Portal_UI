@@ -15,6 +15,35 @@ a {
   box-sizing: border-box;
 }
 
+/* typewriter css codes start*/
+.cursor {
+  animation: blinkingText 1s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+      opacity: 1;
+  }
+
+  49% {
+      opacity: 1;
+  }
+
+  60% {
+      opacity: 0;
+  }
+
+  99% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+/* typewriter css codes ends*/
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

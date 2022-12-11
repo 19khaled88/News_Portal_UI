@@ -358,7 +358,7 @@ export default function home({ newsResponse }) {
         <h1 style={{ color: '#22A39F' }}>Editor choice ---</h1>
         <div
           data-aos="fade-up"
-          data-aos-offset="20"
+          data-aos-offset="50"
           data-aos-easing="ease-in-out"
           data-aos-delay="150"
           style={{
