@@ -55,9 +55,9 @@ export default function world({ newsResponse }) {
                 <div className={styles.boxContent}>
                       <h3 className={styles.title}>Lorem ipsum dolor</h3>
                       <ul className={styles.socialLinks}>
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-twitter"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
+                          <li><a href="#" class="fa fa-facebook"></a></li>
+                          <li><a href="#" class="fa fa-twitter"></a></li>
+                          <li><a href="#" class="fa fa-linkedin"></a></li>
                       </ul>
                 </div>
                 <div style={{position:'absolute',margin:'0px',bottom:0,left:0, backgroundColor:'#D23369'}}>
@@ -117,7 +117,7 @@ export default function world({ newsResponse }) {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'auto auto auto auto',
+              gridTemplateColumns: '1fr 1fr 1fr 1fr',
               gridColumnGap: 10,
               gridRowGap: 10,
             }}

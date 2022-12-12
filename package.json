@@ -26,6 +26,7 @@
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.1",
     "react-ts-typewriter": "^0.1.8-b",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "transition-style": "^0.1.3"
   }
 }

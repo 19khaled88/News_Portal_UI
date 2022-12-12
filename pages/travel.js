@@ -20,29 +20,10 @@ export default function travel({ newsResponse }) {
  
   return (
     <Layout>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
-        <div
-          style={{
-            flex: 1,
-            borderWidth: '3px',
-            borderStyle: 'solid',
-            borderImage: 'linear-gradient(to right, red, purple) 1',
-          }}
-        >
-          <span
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              width: '90%',
-              margin: 'auto',
-              paddingTop: '10px',
-              paddingBottom:'10px'
-            }}
-          >
-            <button
-              onClick={popularHandler}
-              style={{ flex: 1, height: '35px' }}
-            >
+      <div className={styles.travel} style={{ display: 'flex', flexDirection: 'row' }}>
+        <div>
+          <span>
+            <button onClick={popularHandler} style={{ flex: 1, height: '35px' }}>
               Popular
             </button>
             <button onClick={latestHandler} style={{ flex: 1, height: '35px' }}>
@@ -51,40 +32,24 @@ export default function travel({ newsResponse }) {
           </span>
           <div className={styles.popular} style={newsStatus === 'popular' ? { margin: '5px', display:'block' } : { display:'none' }}>
             {allNews.popular.map((e, index) => (
-              <p
-                onClick={()=>messageClicked(e)}
-                key={index}
-                style={{
-                  borderBottom: '1px solid gray',
-                  fontSize: '16px',
-                  margin: '0px',
-                  cursor: 'pointer',
-                }}
-              >
+              <p onClick={()=>messageClicked(e)} key={index}>
                 {e}
               </p>
             ))}
           </div>
           <div className={styles.latest} style={newsStatus === 'latest' ? { margin: '5px',display:'block' } : { display:'none'}}>
             {allNews.latest.map((e, index) => (
-              <p
-                style={{
-                  margin: '0px',
-                  borderBottom: '1px solid gray',
-                  cursor: 'pointer',
-                }}
-                key={index}
-              >
+              <p onClick={()=>messageClicked(e)}key={index}>
                 {e}
               </p>
             ))}
           </div>
         </div>
-        <div style={{ flex: 3, margin: '0 10px 10px 10px' }}>
+        <div>
           {Details.map((e) => (
             <>
-              <h2 style={{ fontSize: '30px', marginTop: '0px' }}>{messageClick.length > 50 ? messageClick.slice(0, 50)+'...' : messageClick}</h2>
-              <h5 style={{ fontSize: '20px', fontWeight: '400' }}>
+              <h2>{messageClick.length > 50 ? messageClick.slice(0, 50)+'...' : messageClick}</h2>
+              <h5 style={{  }}>
                 {e.subTitle}
               </h5>
               <p
@@ -104,20 +69,9 @@ export default function travel({ newsResponse }) {
               <h2>{e.lasttitle}</h2>
               <p>{e.lastinfo}</p>
               <h1 style={{ fontSize: '20px', color: 'gray' }}>{e.article}</h1>
-              <span
-                style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}
-              >
+              <span>
                 {e.button.map((el) => (
-                  <button
-                    style={{
-                      width: '150px',
-                      height: '40px',
-                      backgroundColor: '#FAF8F1',
-                      borderWidth: '1px',
-                      borderStyle: 'solid',
-                      borderColor: '#DBA39A',
-                    }}
-                  >
+                  <button>
                     {el}
                   </button>
                 ))}

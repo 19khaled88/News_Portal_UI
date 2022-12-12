@@ -1,8 +1,8 @@
 .container {
-  margin: 60px auto;
+  margin: auto;
   /* max-width: 960px; */
   max-width: 90%;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .scrolling{

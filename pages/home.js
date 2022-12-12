@@ -106,7 +106,7 @@ export default function home({ newsResponse }) {
                     height="20px"
                   />
                 ) : (
-                  <p>{footerItem}</p>
+                  <p style={{margin:'3px 0px 3px 0px'}}>{footerItem}</p>
                 )
               })}
             </div>,
@@ -317,18 +317,21 @@ export default function home({ newsResponse }) {
             className={styles.popularNews}
             style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}
           >
-            <div style={{ flexGrow: 1 }}>
+            <div className={styles.wrapper} style={{ flexGrow: 1 }}>
               {popularNews.map((element, index) => {
                 const main = element.main
                 return (
-                  <div key={main[0].id}>
+                  <div className={styles.box} key={main[0].id}>
                     <motion.img
                       src={main[0].image}
                       width="100%"
                       variants={images}
                     />
+                    <div className={styles.content}>
+
                     <h1 style={{ fontSize: '25px' }}>{main[0].title}</h1>
                     <p>{main[0].info}</p>
+                    </div>
                     <button>Read more..</button>
                   </div>
                 )
@@ -345,9 +348,9 @@ export default function home({ newsResponse }) {
               {popularNews.map((NewsItems, index) => {
                 return NewsItems.side.map((news, index) => (
                   <div key={news.id}>
-                    <img src={news.image} alt="No image" width="100%" />
-                    <h1 style={{ fontSize: '18px' }}>{news.title}</h1>
-                    <p>{news.info}</p>
+                    <img className={styles.popularImage} src={news.image} alt="No image" width="100%" />
+                    <h1 style={{ fontSize: '18px' ,margin:'1px' }}>{news.title}</h1>
+                    <p style={{ margin:'1px' }}>{news.info}</p>
                     <button>Read more..</button>
                   </div>
                 ))
@@ -429,8 +432,14 @@ export default function home({ newsResponse }) {
           }}
         >
           {deepFooter.map((element) => (
-            <p>{element}</p>
+            <p >{element}</p>
           ))}
+        </div>
+
+        <div className={styles.open_button} >
+          <h3 style={{color:'black'}}>Welcome to Wesbite</h3>
+          <p style={{color:'black'}}>We are commited to bring you all time with latest news</p>
+          <button style={{backgroundColor:'#DE2B65',padding:'7px',border:'none',borderRadius:'5px',color:'white'}}>Sign up with email</button>
         </div>
       </motion.div>
     </Layout>

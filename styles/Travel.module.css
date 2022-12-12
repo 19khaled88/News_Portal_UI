@@ -1,3 +1,59 @@
+.travel div:nth-child(1){
+    flex: 1;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, red, purple) 1;
+}
+
+.travel div:nth-child(1) > span{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom:10px
+}
+.travel div:nth-child(1) div:nth-child(2) p{
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    margin: 0px;
+    cursor: pointer;
+}
+.travel div:nth-child(1) div:nth-child(3) p{
+       margin: 0px;
+       border-bottom: 1px solid gray;
+       cursor: pointer,
+}
+.travel div:nth-child(2){
+    flex: 3; 
+    margin: 0 10px 10px 10px;
+}
+.travel div:nth-child(2) h2:nth-child(1){
+    font-size: 30px; 
+    margin-top: 0px;
+}
+.travel div:nth-child(2) h5{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.travel div:nth-child(2) span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.travel div:nth-child(2) span button{
+    width: 150px;
+    height: 40px;
+    background-color: #FAF8F1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DBA39A;
+    cursor: pointer;
+}
+
+
+
 .popular p:hover{
     color: black;
     font-weight: 400;
