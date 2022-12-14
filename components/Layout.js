@@ -7,7 +7,6 @@ import Hero from './Hero'
 import Nav from './Nav'
 import TopHeader from './TopHeader'
 
-
 export default function Layout({
   title,
   keywords,
@@ -17,7 +16,7 @@ export default function Layout({
 }) {
   const pathRouter = useRouter()
   return (
-    <div >
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -27,9 +26,15 @@ export default function Layout({
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
           rel="stylesheet"
         />
-        
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        ></link>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
@@ -39,7 +44,7 @@ export default function Layout({
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> */}
       </Head>
       <TopHeader />
-      <div class={styles.scrolling}>
+      {/* <div class={styles.scrolling}>
         <div className={styles.scroll_left}><p> <span style={{color:'royalblue',paddingRight:'5px'}}>Breaking News :</span> <span style={{color:'orangered'}}>Morocco advance to World Cup semi-finals</span> || <span style={{color:'magenta'}}>New iPhone instantly measures a person's height</span> || <span style={{color:'pink'}}>Saudi Arabia plans to build six-runway airport</span> || <span style={{color:'palevioletred'}}>Cooking began 600,000 years earlier than we thought</span> || <span style={{color:'navy'}}>Tunnel under Egypt could lead to Cleopatra's tomb</span></p></div>
         <div className={styles.scroller}>
           <span>
@@ -55,7 +60,7 @@ export default function Layout({
             Politics
           </span>
         </div>
-      </div>
+      </div> */}
       <Nav />
       {/* <Header /> */}
       {pathRouter.pathname === '/' && <Hero />}

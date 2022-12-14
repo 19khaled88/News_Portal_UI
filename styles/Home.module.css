@@ -203,12 +203,14 @@
   display: grid;
   grid-template-columns: auto auto ;
   grid-gap: 10px;
-  background-color: #D9DADF;
-
-  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  
+  padding: 1px;
 }
 .rightSide div{
- 
+ padding: 5px;
+ position: relative;
 }
 .rightSide span{
   display: flex;
@@ -221,14 +223,69 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  margin-right: 8px;
 }
-.rightSide div span p{
+.rightSide div span h5{
   padding: 0px;
+  margin: 0px;
 }
 .rightSide div p{
   margin: 0px;
-  padding-top: 10px;
+  font-size: 15px;
+  padding: 10px 0px 10px 0px;
 }
+
+
+
+
+.rightSideButton {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  outline: 0;
+  bottom: 8px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.rightSideButton:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 40px;
+  content: "";
+  height: 10%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 20%;
+}
+
+.rightSideButton:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .rightSideButton {
+    padding: 2px 10px;
+  }
+}
+
+
+
 
 .worldNews{
   display: flex;
@@ -320,31 +377,17 @@
 }
 
 
-.popularImage{
-  --s: 5px;  /* size of the frame */
-  --b: 2px;   /* border thickness */
-  --w: 200px; /* width of the image */
-  --c: #7B3B3B;
-  
-  width: var(--w);
-  aspect-ratio: 1;
-  object-fit: cover;
-  padding: calc(2*var(--s));
-  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
-  background:
-    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
-    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
-  outline: calc(var(--w)/2) solid #0009;
-  outline-offset: calc(var(--w)/-2 - 2*var(--s));
-  transition: .4s;
-  cursor: pointer;
-}
-.popularImage:hover{
-  outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--s)/-2);
-  --_i: calc(100% - 2*var(--s));
-}
 
+
+
+.popularNews div:nth-child(2) div{
+  /* width: 100%; */
+  position: relative;
+}
+.popularNews div:nth-child(2) div img{
+  /* width: 90%;
+  height: 50%; */
+}
 
 
 .open_button{
@@ -353,7 +396,7 @@
   color: white;
   padding: 16px 20px;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
@@ -385,7 +428,8 @@
   left: 0;
   right: 0;
   /* background-color: #008CBA; */
-  background-color:#4CAF50;
+  background-color:#00ADB5;
+  
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -458,6 +502,36 @@
   transform: translateX(-6px);
 }
 
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  color: #111;
+  cursor: pointer;
+}
+.close:hover {
+  /* opacity: 1; */
+  color: #111;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
 
 @media (max-width: 600px) {
   .grid {
@@ -478,3 +552,347 @@
     filter: invert(1);
   }
 }
+
+
+
+
+@media screen and (min-width: 320px) {  
+  .homeTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    
+  }
+  .homeTop div{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .homeTop div > img{
+    flex-direction: 1;
+  }
+  .homeTop div > p{
+    flex:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .homeBanner{
+    display: flex;
+    flex-direction: column;
+  }
+  .homeBanner div:nth-child(2) div{
+    height: 150px;
+  }
+  .homeBanner div:nth-child(2) div button{
+    padding: 10px;
+  }
+  .rightSide{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wNews div div:nth-child(2) div div div div button{
+    font-size: 14px;
+  }
+  .wNews div div:nth-child(2) div div div div h1{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5px;
+    height: 60px;
+  }
+  .wNews div div:nth-child(2) div div div div p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    padding-top: 0px;
+    height: 70px;
+  }
+  .imageBox p{
+    max-height: 40px;
+  }
+
+  .popularNews{
+    display: flex;
+    flex-direction: column;
+  }
+  .popularNews div:nth-child(2){
+  
+  }
+  .popularNews div div div h1{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .popularNews div div div p{
+    margin: 0px;
+  }
+  .popularNews div div button{
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+  }
+  .popularNews div div button:hover{
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 5px;
+    background-color: #66f2d5;
+    
+    cursor: pointer;
+  }
+  .popularNews div:nth-child(2) div div h1{
+    font-size: 14px;
+    font-weight: 400px;
+  }
+  .popularNews div:nth-child(2) div div p{
+    font-size: 14px;
+    
+  }
+  .popularNews div:nth-child(2) div{
+    min-height: 130px;
+  }
+  .popularNews div:nth-child(2) div button{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .editorChoice{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  .editorChoice h1{
+    margin: 0px;
+    font-size: 25px;
+  }
+  
+  .editorChoiceMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+ 
+  .editorChoiceMain div h1{
+    margin: 8px 0px 0px 0px;
+    font-size: 20px;
+  }
+  .editorChoiceSub div h1{
+    font-size: 15px;
+  }
+  .editorChoiceSub div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+
+  /* .editorChoice div:nth-child(1){
+    flex: 3;
+  }
+  .editorChoice div:nth-child(2){
+    flex: 1;
+  }
+  .editorChoice div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .editorChoice div:nth-child(1) div{
+    display: flex;
+    flex-direction: column;
+  }
+  .editorChoice div:nth-child(1) div div div h1{
+    
+  } */
+ 
+  /* .editorChoice div:nth-child(2) h1{
+    margin: 0px;
+    font-size: 15px;
+  }
+  .editorChoice div:nth-child(2)  div:nth-child(2) h1{
+    font-size: 14px;
+    font-weight: 300;
+  } */
+  .editorChoiceMain{
+
+  }
+
+  .editorChoiceSub{}
+}
+@media screen and (min-width: 480px) {  
+}
+@media screen and (min-width: 600px) {  
+  .wNews div div:nth-child(2) div div div div button{
+    font-size: 14px;
+  }
+  .wNews div div:nth-child(2) div div div div h1{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5px;
+    height: 50px;
+  }
+  .wNews div div:nth-child(2) div div div div p{
+    font-size: 16px;
+    padding-top: 0px;
+    height: 60px;
+    padding-bottom: 3px;
+  }
+  .imageBox p{
+    max-height: 40px;
+  }
+}
+@media screen and (min-width: 768px) {  
+  .rightSide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .wNews div div:nth-child(2) div div div div button{
+    font-size: 14px;
+  }
+  .wNews div div:nth-child(2) div div div div h1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5px;
+    height: 60px;
+  }
+  .wNews div div:nth-child(2) div div div div p{
+    font-size: 16px;
+    padding-top: 0px;
+    height: 70px;
+  } 
+  .imageBox p{
+    max-height: 40px;
+  }
+  .editorChoiceMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+}
+@media screen and (min-width: 900px) {  
+}
+@media screen and (min-width: 1024px) {   
+  .homeTop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .homeTop div p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .homeBanner{
+    display: flex;
+    flex-direction: row;
+  }
+  .homeBanner div:nth-child(1){
+    flex:2;
+    height: 100%;
+  }
+  
+  .homeBanner div:nth-child(2){
+    flex: 1;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+  }
+  
+  .homeBanner div:nth-child(2) div p{
+    font-size: 13px;
+    padding:5px 0px 0px 0px;
+  }
+  .homeBanner div:nth-child(2) div span > h5{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    font-weight: 600;
+  }
+  .homeBanner div:nth-child(2) div button{
+    padding:4px;
+    width: 80px;
+  }
+  
+  .rightSide div{
+    max-height: 110px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popularNews{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .popularNews div:nth-child(1){
+    flex: 2;
+  }
+  .popularNews div:nth-child(2){
+    flex:1;
+  }
+  .popularNews div:nth-child(2) div{
+    min-height: 100px;
+  }
+  .popularNews div:nth-child(2) div div{
+    min-height: 90px;
+  }
+  .popularNews div:nth-child(2) div div h1{
+      font-size: 16px;
+      padding-bottom: 5px;
+  }
+  .popularNews div:nth-child(2) div div p{
+    font-size: 14px;
+  }
+  .editorChoice{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .editorChoice h1 {
+    color: #00ADB5;
+  }
+  .editorChoiceSub div h1{
+    font-size: 18px;
+    color: #111;
+  }
+  .editorChoiceSub div:nth-child(2) > div{
+    max-height: 90px;
+  }
+  .editorChoiceMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {  
+  .editorChoice{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  } 
+  .editorChoiceMain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex:3
+  }   
+  .editorChoiceSub{
+    flex: 1;
+  }
+  .editorChoiceSub h1{
+    margin: 0px;
+    font-size: 25px;
+    color: #00ADB5;
+  }
+  .editorChoiceSub div h1 {
+    font-size: 15px;
+    color: #111;
+  }
+  .editorChoiceSub div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+
+

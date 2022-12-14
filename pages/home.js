@@ -5,7 +5,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { AnimatePresence, motion, useAnimation } from 'framer-motion'
 import { fetcher } from 'lib/api'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -14,6 +14,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
 export default function home({ newsResponse }) {
+  const [closeCard, setCloseCard] = useState(false)
   const {
     homeTop,
     slider,
@@ -81,6 +82,9 @@ export default function home({ newsResponse }) {
     },
   }
 
+  const closeButton = () => {
+    setCloseCard(true)
+  }
   const footerView = (footer, type) => {
     let array = []
     footer.map((element) => {
@@ -106,7 +110,7 @@ export default function home({ newsResponse }) {
                     height="20px"
                   />
                 ) : (
-                  <p style={{margin:'3px 0px 3px 0px'}}>{footerItem}</p>
+                  <p style={{ margin: '3px 0px 3px 0px' }}>{footerItem}</p>
                 )
               })}
             </div>,
@@ -130,15 +134,7 @@ export default function home({ newsResponse }) {
                   <div>
                     <div class="text">{news.title}</div>
                   </div>
-                  <h1
-                    style={{
-                      margin: '0px',
-                      fontSize: '20px',
-                      fontWeight: '500',
-                    }}
-                  >
-                    {news.title}
-                  </h1>
+                  <h1>{news.title}</h1>
                 </div>
               ) : type === 'side' ? (
                 <div>
@@ -146,24 +142,9 @@ export default function home({ newsResponse }) {
                 </div>
               ) : (
                 <div>
-                  <img src={news.image} width="100%" />
-                  <h1
-                    style={{
-                      margin: '0px',
-                      fontSize: '20px',
-                      fontWeight: '500',
-                    }}
-                  >
-                    {news.title}
-                  </h1>
-                  <span
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'row',
-                      gap: '15px',
-                      paddingTop: '5px',
-                    }}
-                  >
+                  
+                  <h1>{news.title}</h1>
+                  <span>
                     <p style={{ margin: '0px' }}>{news.time}</p>
                     <p style={{ margin: '0px' }}>{news.comment}</p>
                   </span>
@@ -181,7 +162,7 @@ export default function home({ newsResponse }) {
     dots: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -193,6 +174,14 @@ export default function home({ newsResponse }) {
           slidesToScroll: 3,
           infinite: true,
           dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
@@ -255,7 +244,7 @@ export default function home({ newsResponse }) {
             >
               {slider.map((element) => (
                 <div key={element.id}>
-                  <img src={element.image} alt="No Image" />
+                  <img src={element.image} alt="No Image" height="100%" />
                   <h2>{element.title}</h2>
                   <h5>{element.info}</h5>
                   <div>
@@ -274,12 +263,16 @@ export default function home({ newsResponse }) {
           </div>
           <div data-aos="fade-left" className={styles.rightSide}>
             {sideInfo.map((element) => (
-              <div key={element.id}>
+              <div
+                key={element.id}
+                style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}
+              >
                 <span>
                   <img src={element.image} />
-                  <p>{element.name}</p>
+                  <h5>{element.name}</h5>
                 </span>
                 <p>{element.info}</p>
+                <button className={styles.rightSideButton}>Read More</button>
               </div>
             ))}
           </div>
@@ -315,9 +308,9 @@ export default function home({ newsResponse }) {
             initial="hidden"
             animate="show"
             className={styles.popularNews}
-            style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}
+            // style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}
           >
-            <div className={styles.wrapper} style={{ flexGrow: 1 }}>
+            <div className={styles.wrapper}>
               {popularNews.map((element, index) => {
                 const main = element.main
                 return (
@@ -328,9 +321,8 @@ export default function home({ newsResponse }) {
                       variants={images}
                     />
                     <div className={styles.content}>
-
-                    <h1 style={{ fontSize: '25px' }}>{main[0].title}</h1>
-                    <p>{main[0].info}</p>
+                      <h1>{main[0].title}</h1>
+                      <p>{main[0].info}</p>
                     </div>
                     <button>Read more..</button>
                   </div>
@@ -341,17 +333,25 @@ export default function home({ newsResponse }) {
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'auto auto',
-                flexGrow: 1,
-                gap: '15px',
+                gap: '10px',
               }}
             >
               {popularNews.map((NewsItems, index) => {
                 return NewsItems.side.map((news, index) => (
-                  <div key={news.id}>
-                    <img className={styles.popularImage} src={news.image} alt="No image" width="100%" />
-                    <h1 style={{ fontSize: '18px' ,margin:'1px' }}>{news.title}</h1>
-                    <p style={{ margin:'1px' }}>{news.info}</p>
-                    <button>Read more..</button>
+                  <div key={news.id} className={styles.snip0016}>
+                    <img
+                      className={styles.popularImage}
+                      src={news.image}
+                      alt="No image"
+                      width="100%"
+                    />
+                    <div>
+                      <h1>{news.title}</h1>
+                      <p>{news.info}</p>
+                    </div>
+                    <button className={styles.rightSideButton}>
+                      Read more..
+                    </button>
                   </div>
                 ))
               })}
@@ -364,28 +364,12 @@ export default function home({ newsResponse }) {
           data-aos-offset="50"
           data-aos-easing="ease-in-out"
           data-aos-delay="150"
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            gap: '10px',
-            paddingBottom: '30px',
-          }}
+          className={styles.editorChoice}
         >
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              columnGap: '10px',
-              rowGap: '10px',
-            }}
-          >
-            {editor(editorChoice, 'main')}
-          </div>
-          <div>
+          <div className={styles.editorChoiceMain}>{editor(editorChoice, 'main')}</div>
+          <div className={styles.editorChoiceSub}>
             <div>{editor(editorChoice, 'side')}</div>
-            <h1 style={{ color: '#22A39F', margin: '0px', paddingTop: '10px' }}>
-              Letest News ---
-            </h1>
+            <h1>Letest News ---</h1>
             <div>{editor(editorChoice, 'latest')}</div>
           </div>
         </div>
@@ -432,14 +416,58 @@ export default function home({ newsResponse }) {
           }}
         >
           {deepFooter.map((element) => (
-            <p >{element}</p>
+            <p>{element}</p>
           ))}
         </div>
 
-        <div className={styles.open_button} >
-          <h3 style={{color:'black'}}>Welcome to Wesbite</h3>
-          <p style={{color:'black'}}>We are commited to bring you all time with latest news</p>
-          <button style={{backgroundColor:'#DE2B65',padding:'7px',border:'none',borderRadius:'5px',color:'white'}}>Sign up with email</button>
+        <div
+          className={styles.open_button}
+          style={
+            closeCard === true ? { display: 'none' } : { display: 'block' }
+          }
+        >
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+            }}
+          >
+            <h3
+              style={{
+                color: 'black',
+                margin: '0px',
+                paddingTop: '5px',
+                flex: 6,
+              }}
+            >
+              Welcome to Wesbite
+            </h3>
+            <a
+              onClick={closeButton}
+              style={{ flex: 1, color: 'black', textAlign: 'right' }}
+              href="#"
+              className="close"
+            >
+              x
+            </a>
+          </div>
+          <p style={{ color: 'black' }}>
+            We are commited to bring you all time with latest news
+          </p>
+          <button
+            style={{
+              backgroundColor: '#DE2B65',
+              padding: '7px',
+              border: 'none',
+              borderRadius: '5px',
+              color: 'white',
+              cursor: 'pointer',
+            }}
+          >
+            Sign up with email
+          </button>
         </div>
       </motion.div>
     </Layout>

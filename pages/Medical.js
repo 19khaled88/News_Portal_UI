@@ -26,16 +26,13 @@ export default function Medical({ newsResponse }) {
             ))}
           </div>
         </div>
-        <div
-          style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}
-          className={styles.secondInner}
-        >
+        <div className={styles.secondInner}>
           <div
             className={styles.latestNewsRight}
             style={{ display: 'flex', flexDirection: 'column', flex: 3 }}
           >
             <h2>Latest News</h2>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px' }}>
+            <div>
               <div style={{ flex: 2 }}>
                 {latestnews.map((element) => {
                   if (element.image !== undefined) {

@@ -24,7 +24,7 @@ export default function world({ newsResponse }) {
           data[element].map((item) => (
             <div key={item.id} style={{ height: ''}}>
               <Tilt>
-              <div style={{position:'relative',height:'70%'}}>
+              <div style={{position:'relative',height:'100%'}}>
                 <img src={item.image} alt="No image" width="100%" height="100%"/>
                 <div style={{position:'absolute',margin:'0px',bottom:0,left:0, backgroundColor:'#D23369'}}>
                   <p style={{color:'white',margin:'10px'}}>World News</p>
@@ -93,34 +93,35 @@ export default function world({ newsResponse }) {
           >
             World News
           </h1>
-          <div style={{ display: 'flex', flexDirection: 'row', gap: 15 }}>
+          <div className={styles.worldNews}>
             <div style={{ flex: 1 }}>
               {worldNews(newsResponse, 'worldNewsLeft')}
             </div>
             <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'auto auto',
-                flex: 1,
-                gridColumnGap: 15,
-                gridRowGap:15
-              }}
+              // style={{
+              //   display: 'grid',
+              //   gridTemplateColumns: 'auto auto',
+              //   flex: 1,
+              //   gridColumnGap: 15,
+              //   gridRowGap:15
+              // }}
             >
               {worldNews(newsResponse, 'worldNewsRight')}
             </div>
           </div>
           <h1
-            style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' ,paddingTop:'15px'}}
+            // style={{ fontSize: '25px', fontWeight: '500', color: 'GrayText' ,paddingTop:'15px'}}
           >
             Popular News
           </h1>
           <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr 1fr 1fr',
-              gridColumnGap: 10,
-              gridRowGap: 10,
-            }}
+            className={styles.popularNews}
+            // style={{
+            //   display: 'grid',
+            //   gridTemplateColumns: '1fr 1fr 1fr 1fr',
+            //   gridColumnGap: 10,
+            //   gridRowGap: 10,
+            // }}
           >
             {worldNews(newsResponse, 'worldPopularNews')}
           </div>

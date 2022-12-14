@@ -14,7 +14,6 @@
 }
 
 
-
 /* scroll_left css coding*/
 .scroll_left{
   height: 50px; 
@@ -133,3 +132,34 @@
   transform: translateX(-100%); 
   }
   }
+
+
+
+
+@media screen and (min-width: 320px) {
+   
+}
+@media screen and (min-width: 480px) {
+    
+}
+@media screen and (min-width: 600px) {
+   
+    
+}
+@media screen and (min-width: 768px) {
+    
+    
+    
+}
+@media screen and (min-width: 900px) {
+   
+    
+}
+@media screen and (min-width: 1024px) {
+   
+    
+}
+@media screen and (min-width: 1200px) {
+   
+    
+}
