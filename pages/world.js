@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import styles from '@/styles/World.module.css'
 import Tilt from 'react-parallax-tilt'
 import { fetcher } from 'lib/api'
+import { VERCEL_URL } from '@/config/BaseUrl'
 
 export default function world({ newsResponse }) {
   const worldNews = (data, type) => {
@@ -132,7 +133,8 @@ export default function world({ newsResponse }) {
 }
 
 export async function getStaticProps() {
-  const newsResponse = await fetcher(`http://localhost:3000/api/news/world`)
+  // const newsResponse = await fetcher(`http://localhost:3000/api/news/world`)
+  const newsResponse = await fetcher(`${VERCEL_URL}/api/news/world`)
 
   return {
     props: {

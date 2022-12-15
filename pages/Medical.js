@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import { VERCEL_URL } from '@/config/BaseUrl'
 import styles from '@/styles/Medical.module.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -174,7 +175,7 @@ export default function Medical({ newsResponse }) {
 }
 
 export async function getStaticProps() {
-  const newsResponse = await fetcher(`http://localhost:3000/api/news/medical`)
+  const newsResponse = await fetcher(`${VERCEL_URL}/api/news/medical`)
 
   return {
     props: {

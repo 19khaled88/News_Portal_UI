@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import { VERCEL_URL } from '@/config/BaseUrl'
 import styles from '@/styles/Travel.module.css'
 import { fetcher } from 'lib/api'
 import { useState } from 'react'
@@ -98,7 +99,7 @@ export default function travel({ newsResponse }) {
 }
 
 export async function getStaticProps() {
-  const newsResponse = await fetcher(`http://localhost:3000/api/news/travel`)
+  const newsResponse = await fetcher(`${VERCEL_URL}/api/news/travel`)
 
   return {
     props: {
