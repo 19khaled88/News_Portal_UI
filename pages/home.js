@@ -59,5 +59,18 @@ export default function Home() {
 //   }
 // }
 
+// export async function getStaticProps(){
+//   const newsResponse = await fetcher(
+//     `${process.env.NEXTJS_PUBLIC_URL}/news?populate=*`
+//   )
+ 
+//   return {
+//     props : {
+//      newsResponse
+//     },
+//     revalidate: 1,
+//   }
+// }
+
 
 
