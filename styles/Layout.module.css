@@ -5,6 +5,20 @@
   padding: 0 10px;
 }
 
+.container div h1:nth-child(3), .container div h1:nth-child(5), .container div h1:nth-child(7){
+  margin: 0px;
+  height: 60px;
+  padding-top: 5px;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-left: 15px solid #00adb5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+
 .scrolling{
   width: 81%;
   margin: auto;
@@ -56,6 +70,8 @@
   font-weight: bold;
   
 }
+
+.rootLayout{}
 
   @keyframes slide {
     /* 0% {

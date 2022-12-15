@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Footer from './Footer'
 // import Header from './Header'
-import Hero from './Hero'
+// import Hero from './Hero'
 import Nav from './Nav'
 import TopHeader from './TopHeader'
 
@@ -63,7 +63,7 @@ export default function Layout({
       </div> */}
       <Nav />
       {/* <Header /> */}
-      {pathRouter.pathname === '/' && <Hero />}
+      {/* {pathRouter.pathname === '/' && <Hero />} */}
       <div className={styles.container}>{children}</div>
       <Footer />
     </div>

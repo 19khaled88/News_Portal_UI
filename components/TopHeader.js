@@ -96,16 +96,16 @@ const TopHeader = () => {
       </div>
       <div></div>
       <div className={menu === true ? styles.disappear : styles.appear}>
-        <a href="#Home">Home</a>
-        <a href="#Medical">Medical</a>
-        <a href="#Sports">Sports</a>
-        <a href="#Business">Business</a>
-        <a href="#Magazine">Magazine</a>
-        <a href="#World">World</a>
-        <a href="#Travel">Travel</a>
-        <a href="#Art">Art</a>
-        <a href="#Blog">Blog</a>
-        <a href="#Politics">Politics</a>
+        <a href="/">Home</a>
+        <a href="/Medical">Medical</a>
+        <a href="/sports">Sports</a>
+        <a href="/business">Business</a>
+        <a href="/magazine">Magazine</a>
+        <a href="/world">World</a>
+        <a href="/travel">Travel</a>
+        <a href="/art">Art</a>
+        <a href="/blog">Blog</a>
+        <a href="/politics">Politics</a>
       </div>
     </div>
   )

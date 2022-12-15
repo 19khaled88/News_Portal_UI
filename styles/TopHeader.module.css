@@ -204,6 +204,7 @@
     display: none;
    }
    .appear{
+    border-radius: 5px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -211,13 +212,14 @@
     gap:15px;
     font-size: 18px;
     font-weight: 500;
-    padding-left: 35px;
-    left: 0px;
-    top: -20px;
+    padding-left: 35px;   
+    left: 10px;
+    top: 10px;
     width: 30%;
     padding-bottom: 15px;
     z-index: 1;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: #00adb5;
    }
    .date{
     padding-top: 5px;

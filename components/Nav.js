@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Nav = () => {
   const path = usePathname()
   const links = [
-    { href: '/home', text: 'Home' },
+    { href: '/', text: 'Home' },
     { href: '/Medical', text: 'Medical' },
     { href: '/sports', text: 'Sports' },
     { href: '/business', text: 'Business' },

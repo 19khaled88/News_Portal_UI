@@ -126,11 +126,21 @@
   justify-content: space-evenly;
   padding-bottom: 15px;
   border-bottom: 1px solid gray;
+    
+  border-left: 15px solid #00adb5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.homeTop span{
+  max-width: 10px;
 }
 
 .homeTop div{
   display: flex;
   flex-direction: row;
+}
+.sliders div div div ul li img{
+  height: 350px;
 }
 
 .sliders div div div ul li div h2{
@@ -197,6 +207,7 @@
   flex-direction: row;
   gap:10px;
   padding-top: 10px;
+
 }
 .rightSide{
   flex: 2;
@@ -205,12 +216,16 @@
   grid-gap: 10px;
   background-color: #ffffff;
   border-radius: 5px;
-  
   padding: 1px;
+  width: 100%;
+  height: 100%;
 }
 .rightSide div{
  padding: 5px;
  position: relative;
+ width: 100%;
+ height: 100%;
+
 }
 .rightSide span{
   display: flex;
@@ -221,7 +236,6 @@
 }
 .rightSide div span img{
   width: 20px;
-  height: 20px;
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -234,6 +248,8 @@
   font-size: 15px;
   padding: 10px 0px 10px 0px;
 }
+
+
 
 
 
@@ -502,6 +518,14 @@
   transform: translateX(-6px);
 }
 
+
+.deepfooter{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ 
+}
+
 .close {
   position: absolute;
   right: 32px;
@@ -588,6 +612,19 @@
   .homeBanner div:nth-child(2) div button{
     padding: 10px;
   }
+  .sliders div div div ul li div img{
+    height: 300px;
+  }
+  .sliders div div div ul li div h2{
+    top:80px;
+    text-align: left;
+  }
+  .sliders div div div ul li div h5{
+    top: 190px;
+  }
+  .sliders div div div ul li div div{
+    top: 230px;
+  }
   .rightSide{
     display: grid;
     grid-template-columns: 1fr;
@@ -662,11 +699,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    padding-bottom: 10px;
   }
   .editorChoice h1{
     margin: 0px;
     font-size: 25px;
+    padding-bottom: 10px;
   }
   
   .editorChoiceMain {
@@ -688,33 +726,18 @@
     row-gap: 10px;
   }
 
+  .editorChoiceSub div:nth-child(3) div{
+    border-top: 1px solid black;
+  }
 
-  /* .editorChoice div:nth-child(1){
-    flex: 3;
-  }
-  .editorChoice div:nth-child(2){
-    flex: 1;
-  }
-  .editorChoice div:nth-child(1){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .editorChoice div:nth-child(1) div{
+  .deepfooter{
     display: flex;
-    flex-direction: column;
-  }
-  .editorChoice div:nth-child(1) div div div h1{
-    
-  } */
- 
-  /* .editorChoice div:nth-child(2) h1{
-    margin: 0px;
-    font-size: 15px;
-  }
-  .editorChoice div:nth-child(2)  div:nth-child(2) h1{
-    font-size: 14px;
-    font-weight: 300;
-  } */
+    flex-direction: column;  
+ }
+  
+ .deepfooter p{
+  margin: 10px 0px 0px 0px;
+ }
   .editorChoiceMain{
 
   }
@@ -744,6 +767,19 @@
   }
 }
 @media screen and (min-width: 768px) {  
+  .sliders div div div ul li div img{
+    height: 340px;
+  }
+  .sliders div div div ul li div h2{
+    top:120px;
+    text-align: left;
+  }
+  .sliders div div div ul li div h5{
+    top: 190px;
+  }
+  .sliders div div div ul li div div{
+    top: 220px;
+  }
   .rightSide{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -813,6 +849,11 @@
     padding:4px;
     width: 80px;
   }
+
+  .sliders div div div ul li div img{
+    height: 350px;
+  }
+ 
   
   .rightSide div{
     max-height: 110px;
@@ -892,6 +933,18 @@
     flex-direction: column;
     row-gap: 10px;
   }
+}
+
+@media screen and (min-width: 1235px) { 
+
+  .deepfooter{
+    display: flex;
+    flex-direction: row;  
+ }
+  
+ .deepfooter p{
+  margin: 10px 0px 0px 0px;
+ }
 }
 
 
