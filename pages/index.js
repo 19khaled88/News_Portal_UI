@@ -476,13 +476,12 @@ export default function home({ newsResponse }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const newsResponse = await fetcher(`${VERCEL_URL}/api/news/home`)
 
   return {
     props: {
       newsResponse,
-    },
-    revalidate: 1,
+    }
   }
 }

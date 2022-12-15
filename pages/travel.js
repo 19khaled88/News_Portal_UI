@@ -98,13 +98,12 @@ export default function travel({ newsResponse }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const newsResponse = await fetcher(`${VERCEL_URL}/api/news/travel`)
 
   return {
     props: {
       newsResponse,
-    },
-    revalidate: 1,
+    }
   }
 }

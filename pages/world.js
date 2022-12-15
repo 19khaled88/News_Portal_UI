@@ -132,14 +132,24 @@ export default function world({ newsResponse }) {
   )
 }
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+//   // const newsResponse = await fetcher(`http://localhost:3000/api/news/world`)
+//   const newsResponse = await fetcher(`${VERCEL_URL}/api/news/world`)
+
+//   return {
+//     props: {
+//       newsResponse,
+//     },
+//     revalidate: 1,
+//   }
+// }
+export async function getServerSideProps() {
   // const newsResponse = await fetcher(`http://localhost:3000/api/news/world`)
   const newsResponse = await fetcher(`${VERCEL_URL}/api/news/world`)
 
   return {
     props: {
       newsResponse,
-    },
-    revalidate: 1,
+    }
   }
 }
